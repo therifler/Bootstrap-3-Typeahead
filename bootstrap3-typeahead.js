@@ -107,7 +107,7 @@
           this.options.scrollHeight.call() :
           this.options.scrollHeight;
 
-      var element;
+      var element, dropup = false;
       if (this.shown) {
       	element = this.$menu;
       } else if (this.$appendTo) {
