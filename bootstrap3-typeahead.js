@@ -49,6 +49,7 @@
   var Typeahead = function (element, options) {
     this.$element = $(element);
     this.options = $.extend({}, $.fn.typeahead.defaults, options);
+    this.autoDropup = typeof this.options.autoDropup == 'boolean' ? this.options.autoDropup : true;
     this.matcher = this.options.matcher || this.matcher;
     this.sorter = this.options.sorter || this.sorter;
     this.select = this.options.select || this.select;
@@ -115,8 +116,13 @@
       } else {
       	element = this.$menu.insertAfter(this.$element);
       }
+      
+      if (this.options.autoDropup) {
+        dropup = document.body.clientHeight < pos.top + pos.height + element.height();
+      }
+      
       element.css({
-          top: pos.top + pos.height + scrollHeight
+          top: dropup ? pos.top - element.outerHeight(true) - scrollHeight : pos.top + pos.height + scrollHeight
         , left: pos.left
         })
         .show();
