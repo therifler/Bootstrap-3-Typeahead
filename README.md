@@ -1,7 +1,7 @@
 Bootstrap 3 Typeahead
 =====================
 
-With [@therifler] autoDropup improvement.
+With autoDropup improvement.
 
 For simple autocomplete use cases there seems to be nothing wrong with the dropped typeahead plugin. Here you will find the typeahead autocomplete plugin for Twitter's Bootstrap 2 ready to use with Twitter's Bootstrap 3. The original code is written by [@mdo](http://twitter.com/mdo) and [@fat](http://twitter.com/fat).
 
