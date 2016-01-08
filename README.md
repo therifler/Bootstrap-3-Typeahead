@@ -1,6 +1,8 @@
 Bootstrap 3 Typeahead
 =====================
 
+With [@therifler] autoDropup improvement.
+
 For simple autocomplete use cases there seems to be nothing wrong with the dropped typeahead plugin. Here you will find the typeahead autocomplete plugin for Twitter's Bootstrap 2 ready to use with Twitter's Bootstrap 3. The original code is written by [@mdo](http://twitter.com/mdo) and [@fat](http://twitter.com/fat).
 
 Users who migrate their website or app from Twitter's Bootstrap 2 to Bootstrap 3 can also use this plugin to keep their current autocomplete functions. See for a complete list of migrations steps: [Migrate your templates from Twitter Bootstrap 2.x to Twitter Bootstrap 3](http://bassjobsen.weblogs.fm/migrate-your-templates-from-twitter-bootstrap-2-x-to-twitter-bootstrap-3/)
@@ -186,11 +188,17 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
                  <td>Adds a delay between lookups.</td>
                </tr>
               <tr>
-              <tr>
                 <td>addItem</td>
                 <td>JSON object</td>
                 <td>false</td>
                 <td>Adds an item to the end of the list, for example "New Entry". This could be used, for example, to pop a dialog when an item is not found in the list of data. Example: <a href="http://cl.ly/image/2u170I1q1G3A/addItem.png">http://cl.ly/image/2u170I1q1G3A/addItem.png</a></td>
+              </tr>
+              <tr>
+                <td>autoDropup</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Displays the list above input field, when list exceedes viewport height.</td>
+              </tr>
               </tbody>
             </table>
 
